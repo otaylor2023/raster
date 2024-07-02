@@ -1,4 +1,5 @@
 open! Core
+module Grayscale = Grayscale
 
 let command =
   Command.group
@@ -7,5 +8,7 @@ let command =
     ; "bluescreen", Blue_screen.command
     ; "blur", Blur.command
     ; "dither", Dither.command
+    ; "edges", Edge_detection.command
+    ; "mosaic", Mosaic.command
     ]
 ;;

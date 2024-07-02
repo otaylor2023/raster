@@ -1,14 +1,15 @@
-(library 
-  (name image_exercise_lib)
-  (libraries
-    async
-    core
-    core_unix
-    core_unix.command_unix
-    file_path
-    expect_test_helpers_async
-    graphics)
-  (inline_tests (deps (glob_files ../images/*.ppm)))
-  (preprocess (pps ppx_jane))
-)
-
+(library
+ (name image_exercise_lib)
+ (libraries
+  async
+  core
+  core_unix
+  core_unix.command_unix
+  file_path
+  expect_test_helpers_async
+  graphics)
+ (inline_tests
+  (deps
+   (glob_files ../images/*.ppm)))
+ (preprocess
+  (pps ppx_jane)))
