@@ -10,5 +10,6 @@ let command =
     ; "dither", Dither.command
     ; "edges", Edge_detection.command
     ; "mosaic", Mosaic.command
+    ; "waldo", Waldo_finder.command
     ]
 ;;
